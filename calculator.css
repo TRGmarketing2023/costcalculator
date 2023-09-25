@@ -18,6 +18,157 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
+/* CSS for Header Banner Section */
+.banner {
+    background-color: #333; /* Gray background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 30px 0; /* Adjust top and bottom padding as needed */
+}
+
+.banner h1 {
+    font-size: 50px; /* Adjust font size as needed */
+    margin: 0; /* Remove default margin */
+    text-transform: uppercase; /* Transform text to uppercase */
+    width: 100%; /* Make the H1 full width */
+	font-weight: 800;
+	max-width: 100%;
+}
+
+
+/* CSS for Three Columns Section */
+.columns {
+    display: flex;
+    justify-content: space-between;
+    background-color: #000; /* Background color for the columns section */
+    padding: 20px 50px; /* Adjust padding as needed */
+}
+
+.column {
+    flex-basis: calc(33.33% - 20px); /* Adjust column width and spacing */
+    text-align: center;
+    padding: 20px; /* Adjust inner padding as needed */
+}
+
+/* CSS for Logo and Contact List */
+.logo-contact {
+    display: flex;
+	color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Adjust inner padding as needed */
+}
+
+.logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+.paragraph p {
+	width: 50%;
+	max-width: 100%;
+	justify-content: center;
+    align-items: center;
+	text-align: center;
+	line-height: 1.5em;
+	font-size: 15px;
+    margin: 10px auto; /* Adjust margin as needed */
+}
+.contact h2 {
+	color: #fff;
+}
+.contact ul {
+	color: #fff;
+    list-style: none;
+	text-align: left;
+	font-size: 15px;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 10px;
+}
+
+/* CSS for Services (Split into 2 Columns) */
+.services {
+    flex-basis: calc(33.33% - 20px); /* Adjust column width and spacing */
+    text-align: center;
+    padding: 20px; /* Adjust inner padding as needed */
+}
+.services h2 {
+	color: #FFFFFF;
+	margin: 0 0 10px; /* Adjust margin as needed */
+}
+.service-list {
+    text-align: left; /* Align the lists to the left */
+    display: inline-block; /* Display inline */
+    vertical-align: top; /* Align to the top */
+	margin-right: 20px; /* Add margin for spacing */
+}
+
+.service-list:last-child {
+    margin-right: 0; /* Remove margin for the last item */
+}
+.service-list ul {
+    list-style: none;
+    padding: 0;
+	color: #fff;
+	text-align: left;
+	font-size: 15px;
+}
+
+.service-list ul li {
+    margin-bottom: 10px;
+	color: #fff;
+}
+
+/* CSS for Location Lists */
+.location h2 {
+	color: #FFFFFF;
+}
+.location p {
+	color: #FFFFFF;
+}
+
+
+
+/* CSS for Footer Section */
+.footer {
+    background-color: #3a3a3a; /* Gray background color */
+    color: #fff; /* Text color */
+    text-align: center;
+    padding: 20px 0; /* Adjust top and bottom padding as needed */
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+.footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
 .roleCategoryFilter {
 	display: none;
 }
@@ -259,10 +410,12 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
   }
 
 
-  /* Grid Container - Mobile */
+  
 
+
+/* Grid Container - Mobile View */
 /* Media query for smaller screens */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) and (min-width: 768px) {
     .grid-container {
         grid-template-columns: 100%; /* Single column layout for smaller screens */
     }
@@ -293,8 +446,9 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
     .btnCancel {
         margin: 5px 0;
     }
-	/* TB Container Mobile View */
 
+
+	/* TB Container Mobile View */
 	/* Mobile-first styles */
 	.tbContainer {
 		width: 100%; /* Full width for mobile */
@@ -330,7 +484,8 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 		color: #eb6524;
 	}
 
-			/* Mobile-first styles */
+
+	/* Mobile-first styles */
 		.tbRoleSelector {
 			width: 100%; /* Full width for mobile */
 			border-style: none;
@@ -517,7 +672,8 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 			border-color: #3a3a3a;
 			transition: all 0s ease-in;
 		}
-		/* Mobile-first styles */
+
+	/* Mobile-first styles */
 	.teamListItem {
 		display: flex; /* Use flexbox for mobile */
 		flex-direction: column; /* Stack child elements vertically */
