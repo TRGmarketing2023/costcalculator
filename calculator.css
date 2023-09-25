@@ -31,7 +31,7 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
     margin: 0; /* Remove default margin */
     text-transform: uppercase; /* Transform text to uppercase */
     width: 100%; /* Make the H1 full width */
-	font-weight: 800;
+	font-weight: 700;
 	max-width: 100%;
 }
 
@@ -41,7 +41,7 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
     display: flex;
     justify-content: space-between;
     background-color: #000; /* Background color for the columns section */
-    padding: 20px 50px; /* Adjust padding as needed */
+    padding: 20px 150px; /* Adjust padding as needed */
 }
 
 .column {
@@ -94,9 +94,15 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 /* CSS for Services (Split into 2 Columns) */
 .services {
     flex-basis: calc(33.33% - 20px); /* Adjust column width and spacing */
-    text-align: center;
+	display: inline;
+	color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	margin-top: 30px;
     padding: 20px; /* Adjust inner padding as needed */
 }
+
 .services h2 {
 	color: #FFFFFF;
 	margin: 0 0 10px; /* Adjust margin as needed */
@@ -121,17 +127,133 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 
 .service-list ul li {
     margin-bottom: 10px;
-	color: #fff;
+    color: #fff;
 }
 
 /* CSS for Location Lists */
-.location h2 {
-	color: #FFFFFF;
+/* CSS for Location (Centered Content) */
+.location {
+	display: flex;
+	color: #fff;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px; /* Adjust inner padding as needed */
 }
-.location p {
+.location h2 {
+	margin: 0px;
+	padding: 0px;
 	color: #FFFFFF;
+	text-align: left;
+}
+.location h3 {
+	color: #eb6524;
+	text-align: center;
+}
+.location ul {
+	margin: 0px;
+    list-style: none;
+    padding: 0px;
+	color: #fff;
+	text-align: left;
+}
+.location ul li {
+    margin-bottom: 10px;
+	color: #fff;
+	font-size: 15px;
 }
 
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .banner {
+        padding: 20px 0; /* Adjust top and bottom padding for mobile */
+    }
+
+    .banner h1 {
+        font-size: 30px; /* Adjust font size for mobile */
+    }
+}
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .columns {
+        flex-direction: column; /* Stack columns vertically */
+        align-items: center; /* Center columns horizontally */
+        padding: 20px; /* Adjust padding as needed for mobile */
+    }
+
+    .column {
+        flex-basis: 100%; /* Full width for mobile */
+        margin-bottom: 20px; /* Add margin between columns in mobile view */
+    }
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .services {
+		flex-basis: calc(33.33% - 20px); /* Adjust column width and spacing */
+		display: block;
+		color: #fff;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		margin-top: 0px;
+		padding: 10px; /* Adjust inner padding as needed */
+	}
+	
+	.service-list {
+		text-align: left; /* Align the lists to the left */
+		display: inline-block; /* Display inline */
+		vertical-align: top; /* Align to the top */
+		margin-right: 50px; /* Add margin for spacing */
+	}
+	
+	.service-list:last-child {
+		margin-right: 0; /* Remove margin for the last item */
+	}
+	.services h2 {
+		font-size: 32px;
+	}
+	.service-list ul {
+		list-style: none;
+		padding: 0;
+		color: #fff;
+		text-align: center;
+		font-size: 16px;
+	}
+	
+}
+
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .logo-contact {
+        padding: 20px; /* Adjust padding as needed for mobile */
+    }
+
+    .paragraph p {
+        width: 100%; /* Full width for mobile */
+        margin: 10px auto; /* Adjust margin for mobile */
+		font-size: 16px;
+    }
+	.contact h2{
+		font-size: 32px;
+	}
+}
+/* Media query for mobile view */
+@media (max-width: 768px) {
+    .location {
+        padding: 20px; /* Adjust padding as needed for mobile */
+    }
+
+    .location h2 {
+        text-align: center; /* Center the heading on mobile */
+		font-size: 32px;
+    }
+
+    .location ul li {
+        font-size: 16px; /* Reduce font size for mobile */
+    }
+}
 
 
 /* CSS for Footer Section */
@@ -415,7 +537,7 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 
 /* Grid Container - Mobile View */
 /* Media query for smaller screens */
-@media only screen and (max-width: 768px) and (min-width: 768px) {
+@media (max-width: 768px) {
     .grid-container {
         grid-template-columns: 100%; /* Single column layout for smaller screens */
     }
