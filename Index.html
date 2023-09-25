@@ -1,0 +1,159 @@
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<body>
+<div class="entry-content clear"itemprop="text">
+<div class="inherit-container-width wp-block-group alignfull is-layout-constrained">
+	<div class="wp-block-group__inner-container">
+<!-- OVERLAY -->
+		<div id="overlay" class="overlay hidden"></div>
+
+		<!-- START MAIN WRAPPER OPEN -->
+		<div class="tb" id="tb">
+			<div class="tbWrapper">
+				<div class="tbContainer">
+					<!-- END MAIN WRAPPER OPEN -->
+					
+					<!-- START ROLE SELECTOR -->
+					<div id="roleSelector" class="tbRoleSelector hidden">
+						<div class="tbRoleSelector_content">
+							<!-- HEADER -->
+							<div class="tbRoleSelectorRow tbRoleSelectorHeader">
+								<div class="table">
+									<div class="row">
+										<div class="cell textCenter">
+											<h3>ADD ROLE</h3>
+											<div class="roleCategoryToggle" id="roleCategoryToggle"></div>
+										</div>
+										<div class="cell cellTop textRight">
+											<a onclick="toggleRoleSelector('close')">
+												<i class="fa fa-times" aria-hidden="true"></i>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="tbRoleSelectorRow tbRoleSelectorFilter">
+								<input id="tbRoleSelectorFilter" type="text" placeholder="Search role...">
+							</div>
+							
+							<div id="tbRoleSelectorList" class="tbRoleSelectorRow tbRoleSelectorList">
+								<div class="tbRoleSelectorItem" id="roleListItem0" onclick="addRole(0)"><div>
+
+							</div>
+						</div>
+					</div>
+						</div>
+					</div>
+					<!-- END ROLE SELECTOR -->
+                    
+					<!-- START GRID -->
+					<div class="grid-container">
+						
+						<div class="gridcolumn1">
+							<div class="getStarted" id="getStartedImageContainer">
+								<img decoding="async" id="getStartedImage" class="imageResponsive imageGetStarted" src="https://theremotegroup.com/wp-content/uploads/2023/02/Outsourcing-Services.jpg">
+							</div>
+							<!-- START TASK BAR -->
+							<div class="grid-btn">
+								
+								<div class="btnADD">
+									<div class="cell center tbRoleContainer">
+										<div id="taskBar" class="taskBar">
+											<button id="addRoleButton" class="addRoleAction1" onclick="toggleRoleSelector('open')">ADD ROLE</button>
+										</div>
+									</div>
+								</div>
+								<div class="btnCancel">
+									<div class="cell center tbRoleContainer">
+										<div id="taskBar" class="taskBar">
+											<button id="addRoleButton" class="addRoleAction2" onclick="resetTeamBuilder('close')">CANCEL</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- END TASK BAR -->
+						</div>
+						<div class="gridcolumn2">
+							<!-- START MAIN TOOLBAR -->
+					<div class="tbCalculatorTools" id="tbCalculatorTools">
+						<div class="table">
+							<div class="row">
+								<div class="cell tbRoleContainer">
+									<div class="dropdownMenuContainer workOptionsContainer left" id="workOptionsContainer">
+                                      <!--  <button onclick="toggleElement(&quot;workOptionSelector&quot;)" class="workOptionsAction actionButton" id="optionSelectorButton">
+                                            <span>Office</span>
+											<i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                        </button>
+                                        <div class="workOptionSelector dropdownMenu hidden" id="workOptionSelector">
+                                            <a id="workOptionsListItem-flex" onclick="setWorkOption(&quot;flex&quot;)">Home</a>
+                                            <a id="workOptionsListItem-office" onclick="setWorkOption(&quot;office&quot;)" class="dropdownItemSelected">Office</a>
+                                        </div>-->
+                                    </div>
+
+									<div class="dropdownMenuContainer locationContainer left" id="locationContainer">
+                                        <button onclick="toggleElement(&quot;locationSelector&quot;)" class="locationSelectorAction actionButton" id="locationSelectorButton">
+                                            <span class="hideMobile">United States</span>
+                                            <span class="hideDesktop">US$</span>
+                                            <i class="fa fa-chevron-down" aria-hidden="true"></i>
+                                        </button>
+                                        <div class="locationSelector dropdownMenu hidden" id="locationSelector">
+                                            <a id="locationListItem-us" onclick="setLocation(&quot;us&quot;)" class="dropdownItemSelected">UNITED STATES</a>
+                                            <a id="locationListItem-au" onclick="setLocation(&quot;au&quot;)">AUSTRALIA</a>
+                                            <a id="locationListItem-uk" onclick="setLocation(&quot;uk&quot;)">UNITED KINGDOM</a>
+                                        </div>
+                                    </div>
+							    </div>
+					</div>
+					<!-- END MAIN TOOLBAR -->
+							<!-- START TEAM BUILDER -->
+							<div class="tbCalculator">
+
+								<!-- START TEAM LIST -->
+								<div id="tbCalculatorTeamList" class="tbCalculatorTeamList">
+									<div class="table teamList" id="teamList"></div>
+								</div>
+								<!-- END TEAM LIST -->
+
+									<!-- START TEAM SUMMARY -->
+									<div class="tbCalculatorSummary ">
+										<!-- START SAVINGS SUMMARY -->
+										<div id="teamSavingTotal">
+											<h2 class="getStartedMessage">
+												<div class="addRoleButtonSummary" id="addRoleButtonSummary" onclick="toggleRoleSelector(&quot;open&quot;);">Get started</div>
+											</h2>
+										</div>
+										<!-- END SAVINGS SUMMARY -->
+									</div>
+									<!-- END TEAM SUMMARY -->
+							</div>
+							<!-- END TEAM BUILDER -->
+						</div>
+						<div class="TRGdisclaimer">
+							<p>Disclaimer: The cost estimates provided by this calculator are intended for general informational purposes only. Please note that these figures are purely estimates. The actual costs for your specific project or requirements may vary.</p>
+						</div>
+					</div>
+					<!-- END GRID -->
+						<!-- START ACTION BAR -->
+						<div class="tbCalculatorAction" id="tbCalculatorAction" style="display: none;"></div>
+						<!-- END ACTION BAR -->
+					<!-- START MAIN WRAPPER CLOSE -->
+				</div>
+			</div>
+		</div>
+		<!-- END MAIN WRAPPER CLOSE -->
+
+
+		<!-- INCLUDE MAIN STYLE -->
+		<link rel="stylesheet" href="calculator.css">
+
+		<!-- INCLUDE MAIN SCRIPT -->
+		<script src="calculator.js"></script>
+</div>
+</div>
+</div>
+</body>
+</html>
