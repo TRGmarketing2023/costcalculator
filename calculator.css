@@ -36,6 +36,95 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 }
 
 
+/* Create a CTA Container for the columns */
+.CTA-column-container {
+	background-color: #3A3A3A;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.column-container {
+	display: flex;
+}
+
+/* Style the first column (80% width) */
+.column1 {
+    flex: 80%;
+	margin: 10px;
+    padding: 0px 50px 0px 0px;
+	text-align: center;
+	font-size: 32px;
+	color: #FFFFFF;
+}
+
+/* Style the second column (20% width) */
+.column2 {
+    flex: 20%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+
+}
+
+/* Style the button */
+.CTAbutton {
+    display: block;
+    width: 100%;
+    padding: 15px 45px 15px 45px;
+    background-color: #eb6524;
+    color: white;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+	text-transform: uppercase;
+	border-radius: 25px; /* Round the corners */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add shadow */
+    transition: all 0.3s ease; /* Add a smooth hover effect */
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif; /* Elegant font */
+    font-weight: bold; /* Bold font */
+}
+
+/* Hover effect for the button */
+.CTAbutton:hover {
+    background-color: #000;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Media queries for responsive design */
+
+/* Mobile view */
+@media (max-width: 767px) {
+    .column-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .column1 {
+        flex: 100%;
+        margin: 10px;
+        padding: 10px;
+        font-size: 28px;
+		line-height: 1.2em;
+    }
+
+    .column2 {
+        flex: 100%;
+        padding: 0px 10px 50px 10px;
+    }
+
+    .CTAbutton {
+		width: 80%;
+		max-width: 100%;
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+}
+
 /* CSS for Three Columns Section */
 .columns {
     display: flex;
@@ -145,7 +234,7 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 	margin: 0px;
 	padding: 0px;
 	color: #FFFFFF;
-	text-align: left;
+	text-align: center;
 }
 .location h3 {
 	color: #eb6524;
@@ -153,10 +242,11 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 }
 .location ul {
 	margin: 0px;
+	line-height: 1.5em;
     list-style: none;
     padding: 0px;
 	color: #fff;
-	text-align: left;
+	text-align: center;
 }
 .location ul li {
     margin-bottom: 10px;
@@ -258,8 +348,8 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 
 /* CSS for Footer Section */
 .footer {
-    background-color: #3a3a3a; /* Gray background color */
-    color: #fff; /* Text color */
+    background-color: #fff; /* Gray background color */
+    color: #000; /* Text color */
     text-align: center;
     padding: 20px 0; /* Adjust top and bottom padding as needed */
 }
@@ -285,7 +375,7 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 }
 
 .footer a {
-    color: #fff;
+    color: #000;
     text-decoration: none;
 }
 
@@ -560,7 +650,7 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
     .grid-btn {
         grid-template-columns: 1fr; /* Single column layout for buttons */
 		margin: 0px;
-		grid-gap: 10px; /* Adjust the gap for smaller screens */
+		grid-gap: 0px; /* Adjust the gap for smaller screens */
     }
 
     /* Adjust padding, margin, and other styles as needed for smaller screens */
@@ -574,7 +664,7 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 	/* Mobile-first styles */
 	.tbContainer {
 		width: 100%; /* Full width for mobile */
-		padding: 20px; /* Adjust padding for mobile */
+		padding: 20px 10px 20px 10px; /* Adjust padding for mobile */
 		box-sizing: border-box; /* Ensure padding is included in width */
 	}
 
@@ -760,7 +850,7 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 		}
 
 		.tbCalculatorTools {
-			padding: 10px;
+			padding: 0px 0px 0px 0px !important;
 		}
 
 		.addRoleAction1,
@@ -816,11 +906,12 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 		text-align: center; /* Center text horizontally */
 	}
 	.teamListItem .cell span{
-		font-size: 15px !important;
-		line-height: 1.5em !important;
+		font-size: 18px !important;
+		line-height: 1.2em !important;
 		text-transform: uppercase !important;
 		font-weight: 800;
 		text-align: center !important;
+		font-family: Arial, Helvetica, sans-serif;
 	}
 	
 	.teamListLabel .contentContainer {
@@ -1172,11 +1263,7 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
   border-color: #aaa;
 }
 
-/* TEAM LIST 
-.tbCalculatorTeamList {
-	min-height: 250px;
-	padding: 20px 0px 0px 0px;	
-}*/
+/* TEAM LIST */
 .teamListItemHeader {
     font-size: 18px;
     text-transform: uppercase;
@@ -1201,15 +1288,16 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
 	vertical-align: center;
 	border-style: solid none none none;
 	border-width: 1px;
-	border-color: #d5e8f4;	
+	border-color: #dedede;
 }
 
 .teamListLabel .contentContainer {
 	text-align: left !important;
-	line-height: 1.5em;
+	line-height: 1.2em;
 	font-weight: bold;
     font-size: 16px;
-    color: #3a3a3a;
+    color: #000;
+	text-transform: uppercase;
 }
 .teamListControls {
 	margin: 0px auto;
@@ -1778,10 +1866,10 @@ justify-content: center;
 
 
 @media 
-	only screen and (max-width: 800px) {
+	only screen and (max-width: 768px) {
 
 .tb {
-	margin: 0px 0px 100px 0px !important;
+	margin: 0px 0px 50px 0px !important;
 	padding: 10px !important;
 }
 .tbHeader {
