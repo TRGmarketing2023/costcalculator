@@ -1861,7 +1861,7 @@ justify-content: center;
 
 
 /* =========================*/
-/* 			MOBILE 			*/
+/* 			MOBILE View		*/
 /* =========================*/
 
 
@@ -1882,37 +1882,11 @@ justify-content: center;
 	font-size: 170%;
 	font-weight: 700;
 }
-/* .tbCalculator {
-	margin: auto;
-    padding: auto;
-    width: auto;
-    max-width: 100%;
-	border-radius: 0px;
-	background-color: inherit;
-	box-shadow: none;
-} */
-/* .tbRoleContainer button {
-	padding: 10px 10px !important;
-	margin: 0px;
-	font-size: 100%; 
-} */
-/* .tbRoleSelector {
-	margin: -20px 10px 10px 10px;
-	padding: 5px !important;
-	border-radius: 10px;
-	max-height: 600px;
-	overflow: hidden;
-} */
 
 .tbRoleSelectorHeader {
 	margin: 0px !important;
 	padding: 0px !important;
 }
-/* .tbRoleSelector h1 {
-	font-size: 160%;
-	margin: 10px 0px !important;
-	padding: 0px !important;
-} */
 
 .tbRoleSelectorFilter input {
 	font-size: 15px !important;
@@ -1956,27 +1930,7 @@ justify-content: center;
 .tbCalculatorSummary {
 	background-color: inherit;
 }
-/* .tb .tbCalculator .tbCalculatorTeamList {
-	margin-top: 0px !important;
-	padding-top: 0px !important;	
-	margin-bottom: 0px !important;
-	padding-bottom: 0px !important;	
-	padding: 0px !important;
-	margin: 0px !important;
-} */
-/* .teamListItem {
-	display: block;
-	margin: 10px 0px 20px 0px;
-	padding: 0px 10px 15px 10px;
-	border-radius: 10px;
-	box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, .1);
-	background-color: #FFFFFF;
-}
-.teamListItem .cell {
-	margin: 0px;
-	padding: 10px;
-	border-style: none;
-} */
+
 .teamListLabel  {
 	display: block;
 	margin: 0px;
@@ -2039,10 +1993,6 @@ justify-content: center;
 	padding: 0px;
 	border-bottom: none;
 }
-/* 
-.dropdownMenu {
-	right: 0px;
-} */
 
 .teamSummaryDetailRowTotal {
 	text-align: center !important;
@@ -2108,12 +2058,7 @@ justify-content: center;
 .tbCalculatorSummary {
 	padding: 0px 0px 10px 0px !important;
 }
-/* .tbCalculatorSummaryContent {
-	display: block;
-	margin-top: 10px !important;
-	float: none;
-	text-align: center;
-} */
+
 .tbCalculatorSummaryResult {
 	margin: auto;
 	float: none;
@@ -2126,10 +2071,6 @@ justify-content: center;
 .tbCalculatorAction button {
 	box-shadow: none;
 }
-
-/* .tbCalculatorSummarySaving {
-	margin-bottom: 40px;
-} */
 
 .getStartedMessage {
 	padding: 20px 0px 0px 0px !important;
@@ -2147,6 +2088,4 @@ display: none !important;
 display: inline-block !important;
 }
 
-
-  
 }

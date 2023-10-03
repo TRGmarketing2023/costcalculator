@@ -3,6 +3,10 @@
 <meta charset="UTF-8">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i&display=swap">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<head>
+    <title>The Remote Group Cost Calculator</title>
+	<link rel="icon" type="image/png" href="https://theremotegroup.com/wp-content/uploads/2022/12/TRG-Favicon.png">
+</head>
 <body>
 	<header class="banner">
         <h1>Cost Calculator</h1>
@@ -38,11 +42,11 @@
 									</div>
 								</div>
 							</div>
-
+							<!-- Search Bar Start Here -->
 							<div class="tbRoleSelectorRow tbRoleSelectorFilter">
 								<input id="tbRoleSelectorFilter" type="text" placeholder="Search role...">
 							</div>
-							
+							<!-- End Search Bar -->
 							<div id="tbRoleSelectorList" class="tbRoleSelectorRow tbRoleSelectorList">
 								<div class="tbRoleSelectorItem" id="roleListItem0" onclick="addRole(0)"><div>
 
@@ -96,7 +100,7 @@
                                             <a id="workOptionsListItem-office" onclick="setWorkOption(&quot;office&quot;)" class="dropdownItemSelected">Office</a>
                                         </div>-->
                                     </div>
-
+									<!-- Dropdown Nav Start Here -->
 									<div class="dropdownMenuContainer locationContainer left" id="locationContainer">
                                         <button onclick="toggleElement(&quot;locationSelector&quot;)" class="locationSelectorAction actionButton" id="locationSelectorButton">
                                             <span class="hideMobile">United States</span>
@@ -109,6 +113,7 @@
                                             <a id="locationListItem-uk" onclick="setLocation(&quot;uk&quot;)">UNITED KINGDOM</a>
                                         </div>
                                     </div>
+									<!-- End Dropdown Nav Here -->
 							    </div>
 					</div>
 					<!-- END MAIN TOOLBAR -->
@@ -173,74 +178,78 @@
 			</div>
 		</div>
 		<!-- CTA Container End Here -->
-<!-- Three Columns Section -->
-<section class="columns">
-	<!-- Column 1: Logo and Contact List -->
-	<div class="column logo-contact">
-		<div class="logo">
-			<img src="https://theremotegroup.com/wp-content/uploads/2022/12/The-Remote-Group-Logo.png" alt="Logo">
-		</div>
-		<div class="paragraph">
-			<p>Our services are specially designed to drive business growth, productivity, and profit by cost-efficiently upscaling remote teams.</p>
-		</div>
-		<div class="contact">
-			<h2>Contact Us</h2>
-			<ul>
-				<li>Email: info@theremotegroup.com</li>
-				<li>Phone: +63 28 540 3320</li>
-			</ul>
-		</div>
-	</div>
-	
-	<!-- Column 2: Split into 2 Columns for Services -->
-	<div class="column services">
-		<h2>Our Services</h2>
-		<div class="service-list">
-			<ul>
-				<li>Accounting and Finance Services</li>
-				<li>Architectural Services</li>
-				<li>B2B Sales Services</li>
-				<li>Creative Services</li>
-				<li>Customer Service Support</li>
-				<li>Digital Marketing Services</li>
-				<li>eCommerce Services</li>
-				<li>Healthcare Virtual Assistant</li>
-			</ul>
-		</div>
-		<div class="service-list">
-			<ul>
-				<li>Hotel and Accommodation Services</li>
-				<li>IT Support Services</li>
-				<li>Real Estate Services</li>
-				<li>Recruitment Process Outsourcing</li>
-				<li>SaaS and Tech Development</li>
-				<li>Travel and Tourism Services</li>
-				<li>Virtual Assistant</li>
-			</ul>
-		</div>
-	</div>
-	<!-- Column 3: Location as a List -->
-	<div class="column location">
-		<h2>Our Location</h2>
-		<ul>
-			<h3>Philippines</h3>
-			<li>Pavilion 03, Clark Center, Berthaphil III Jose Abad Santos Avenue, Clark Freeport Zone, Mabalacat, 2023 Pampanga</li>
-			<h3>Hongkong</h3>
-			<li>Suite 409, Beverley Commercial Centre, 87-105 Chatham Road South, Tsim Sha Tsui Kowloon</li>
-			<h3>United States</h3>
-			<li>12175 Visionary Way, Fishers, IN 46038</li>
-			<li>16192 Coastal Highway, Lewes, DE 19958</li>
-		</ul>
-	</div>
-</section>
-<footer class="footer">
-	<div class="footer-content">
-		<a href="https://theremotegroup.com/" target="_blank">&copy; 2023 The Remote Group</a>
-		<!-- <ul>
-			<li><a href="#">Privacy Policy</a></li>
-			<li><a href="#">Terms of Service</a></li>
-		</ul> -->
-	</div>
-</footer>
+		
+		<!-- Three Columns Section Start Here -->
+		<section class="columns">
+			<!-- Column 1: Logo and Contact List -->
+			<div class="column logo-contact">
+				<div class="logo">
+					<img src="https://theremotegroup.com/wp-content/uploads/2022/12/The-Remote-Group-Logo.png" alt="Logo">
+				</div>
+				<div class="paragraph">
+					<p>Our services are specially designed to drive business growth, productivity, and profit by cost-efficiently upscaling remote teams.</p>
+				</div>
+				<div class="contact">
+					<h2>Contact Us</h2>
+					<ul>
+						<li>Email: info@theremotegroup.com</li>
+						<li>Phone: +63 28 540 3320</li>
+					</ul>
+				</div>
+			</div>
+			
+			<!-- Column 2: Split into 2 Columns for Services -->
+			<div class="column services">
+				<h2>Our Services</h2>
+				<div class="service-list">
+					<ul>
+						<li>Accounting and Finance Services</li>
+						<li>Architectural Services</li>
+						<li>B2B Sales Services</li>
+						<li>Creative Services</li>
+						<li>Customer Service Support</li>
+						<li>Digital Marketing Services</li>
+						<li>eCommerce Services</li>
+						<li>Healthcare Virtual Assistant</li>
+					</ul>
+				</div>
+				<div class="service-list">
+					<ul>
+						<li>Hotel and Accommodation Services</li>
+						<li>IT Support Services</li>
+						<li>Real Estate Services</li>
+						<li>Recruitment Process Outsourcing</li>
+						<li>SaaS and Tech Development</li>
+						<li>Travel and Tourism Services</li>
+						<li>Virtual Assistant</li>
+					</ul>
+				</div>
+			</div>
+			<!-- Column 3: Location as a List -->
+			<div class="column location">
+				<h2>Our Location</h2>
+				<ul>
+					<h3>Philippines</h3>
+					<li>Pavilion 03, Clark Center, Berthaphil III Jose Abad Santos Avenue, Clark Freeport Zone, Mabalacat, 2023 Pampanga</li>
+					<h3>Hongkong</h3>
+					<li>Suite 409, Beverley Commercial Centre, 87-105 Chatham Road South, Tsim Sha Tsui Kowloon</li>
+					<h3>United States</h3>
+					<li>12175 Visionary Way, Fishers, IN 46038</li>
+					<li>16192 Coastal Highway, Lewes, DE 19958</li>
+				</ul>
+			</div>
+		</section>
+		<!-- End Three Columns Section -->
+		<!-- Footer Section Start Here -->
+		<footer class="footer">
+			<div class="footer-content">
+				<a href="https://theremotegroup.com/" target="_blank">&copy; 2023 The Remote Group</a>
+				<!-- <ul>
+					<li><a href="#">Privacy Policy</a></li>
+					<li><a href="#">Terms of Service</a></li>
+				</ul> -->
+			</div>
+		</footer>
+		<!-- End Footer Section Here -->
 </body>
 </html>
