@@ -77,9 +77,9 @@ var countries = {
 
 // DATA SKILL LEVELS
 var levels = {
-	1: { label: "Junior", description: "", id: 0 },
-	2: { label: "Intermediate", description: "", id: 1  },
-	3: { label: "Senior", description: "", id: 2  },
+	1: { label: "Junior (0-3 yrs)", description: "", id: 0 },
+	2: { label: "Intermediate (3-5 yrs)", description: "", id: 1  },
+	3: { label: "Senior (5 and up yrs)", description: "", id: 2  },
 }
 
 var category = {
