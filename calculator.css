@@ -1109,6 +1109,23 @@ body { margin: 0px; padding: 0px; background-color: #f2f2f2;
     --n: 4;
 }
 
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .TRGbtn-wave {
+        padding: 10px; /* Increase padding for better readability on smaller screens */
+    }
+
+    .btn-wave {
+        width: 60%; /* Adjust button width for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-wave {
+        width: 80%; /* Further adjust button width for even smaller screens (e.g., mobile) */
+    }
+}
+
 
 /* CALCULATOR */
 .tbCalculator {
